@@ -24,7 +24,7 @@ function Navbar() {
     <nav
       className={`fixed left-0 z-20 w-full ${
         isScrolling ? "!bg-white" : "!bg-transparent "
-      }   -top-0 `}
+      }   -top-10 `}
     >
       <div className="flex items-center justify-between p-4 mx-auto flex-nowrap max-w-screen-2xl">
         {/* logo */}

@@ -48,7 +48,7 @@ export default function Registeration() {
         <SubPageHero title={"Registeration"} />
         <Flex
             mih={50}
-            bg="rgba(0, 0, 0, .3)"
+            bg="rgba(0, 0, 0, .1)"
             gap="md"
             justify="center"
             align="flex-start"
@@ -56,22 +56,20 @@ export default function Registeration() {
             wrap="wrap"
         >
         {pages.map((page) => (
-        <Card shadow="sm" miw={400}  w={400}  m={20} padding="lg" radius="md" 
-        key={page.id}
-                        
+        <Card shadow="sm" w={290}  m={10} padding="lg" radius="md" 
+        key={page.id}              
         >
-        <Card.Section>
-        
-        <Image
-          src={page.image}
-          height={360}
-          // opacity={0.7}
-          alt={page.title}
-        />
-        </Card.Section>
+          <Card.Section>
+            <Image
+              src={page.image}
+              height={260}
+              // opacity={0.7}
+              alt={page.title}
+            />
+          </Card.Section>
 
         <Group justify="space-between" mt="md" mb="xs">
-        <Text color="marine" fw={700}>{page.title}</Text>
+        <Text color="marine" fw={600}>{page.title}</Text>
         <Badge color="pink" variant="light">
           Open
         </Badge>
